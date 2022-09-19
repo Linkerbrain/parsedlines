@@ -1,0 +1,201 @@
+@import url(fontawesome-all.min.css);
+
+/*
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: "Times New Roman", Times, serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+	background-color: #fdf5e8;
+}
+
+#modules {
+	display: flex;
+	flex-wrap: wrap;
+	max-width:100%;
+	margin-top: 10px;
+	justify-content: center;
+	margin-bottom: 40px;
+  }
+
+.amodule {
+	width: 550px;
+	justify-content: center;
+	display: flex;
+}
+
+/* <-- Newspaper --> */
+
+#content {
+	background-color: #fdf5e8;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.headline {
+	font-size: 3rem;
+	text-align: center;
+	max-width: 1280px;
+	font-style: italic;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+	.headline {
+		font-size: 1.7rem;
+		margin-bottom: 1rem;
+	}
+  }
+/* #1 Franklin
+#2 Segoe
+#3 Georgia*/
+
+#business3 {
+	width: calc(100% - 10px);
+	max-width: 400px;
+	display: flex;
+	flex-wrap: wrap; flex-direction: column;
+	margin-bottom: 30px;
+  }
+  #business3 #box {
+	  display: inline-block;
+	  vertical-align: middle;
+	  justify-content: center;
+  }
+
+  #business3 #intro {
+	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  width: 100%;
+  }
+
+  #business3 #intro #desc {
+		  font-family: inherit;
+		  font-style: italic;
+		  font-size: 1.25rem;
+		  text-align: center;
+	  }
+
+  #business3 #image {
+	  width: 160px;
+	  height: 160px;
+	  float: left;
+	  vertical-align: middle;
+	  text-align: center;
+  }
+	  #business3 #leftpic {
+	  width: 140px;
+	  height: 140px;
+	  margin: 10px;
+	  }
+
+  #business3 #title {
+	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  width: calc(100% - 160px);
+	  display: grid;
+	  vertical-align: bottom;
+	  float: right;
+	  position: relative;
+  }
+	  #business3 #title #name {
+		  font-family: inherit;
+		  font-size: 2rem;
+		  letter-spacing: -0.1rem;
+		  text-align: left;
+		  font-weight: bold;
+	  }
+	  #business3 #title #tagline {
+		  font-size: 1rem;
+		  font-family: inherit;
+		  color: rgb(63, 63, 63);
+		  font-style: italic;
+		  overflow: hidden;
+		  width: 100%;
+		  text-align: left;
+	  }
+
+  #business3 #article {
+	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  width: 100%;
+	  float: left;
+	  margin-top: 10px;
+  }
+	  #business3 #article #plan {
+		  font-family: inherit;
+		  margin-top: 10px;
+		  font-size: 0.85rem;
+		  color:rgb(88, 88, 88);
+		  text-align: left;
+	  }
+
+
+
+
+
+
+#logo {
+	position:absolute;
+	top: 0px;
+	height: 70px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	position: sticky;
+	z-index: -5;
+}
+/* .path {
+	fill:transparent;
+} */
+#lotus-logo {
+    z-index: -5;
+	letter-spacing: -0.14rem;
+	fill: #000000;
+}
+#lotus-word1 {
+	font-size : 1.5rem;
+	fill: #355070;
+}
+#lotus-word2 {
+	font-size : 1.5rem;
+	fill: #e56b6f;
+}
+#lotus-- {
+	font-size : 1.2rem;
+	fill:#b56576;
+}
+#lotus--a {
+	font-size : 1.2rem;
+	fill:#6d597a;
+}
+#lotus--i {
+	font-size : 1.2rem;
+	fill:#eaac8b;
+}
+

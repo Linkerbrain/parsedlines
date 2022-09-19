@@ -1,0 +1,1173 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ParsedLines.ai</title>
+		<meta charset="utf-8" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&family=Epilogue:wght@900&family=Hahmlet&display=swap" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="favicon.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="logo">
+						<svg viewBox="120 -10 115 40" id="logosvg">
+							<!-- <path style="transform:translate(0, 0px); opacity:1" fill="yellow" d="M0,60L14.1,53.3C28.2,47,56,33,85,30C112.9,27,141,33,169,41.7C197.6,50,226,60,254,58.3C282.4,57,311,43,339,41.7C367.1,40,395,50,424,51.7C451.8,53,480,47,508,41.7C536.5,37,565,33,593,38.3C621.2,43,649,57,678,60C705.9,63,734,57,762,45C790.6,33,819,17,847,8.3C875.3,0,904,0,932,3.3C960,7,988,13,1016,28.3C1044.7,43,1073,67,1101,68.3C1129.4,70,1158,50,1186,45C1214.1,40,1242,50,1271,50C1298.8,50,1327,40,1355,36.7C1383.5,33,1412,37,1440,41.7C1468.2,47,1496,53,1525,60C1552.9,67,1581,73,1609,63.3C1637.6,53,1666,27,1694,25C1722.4,23,1751,47,1779,48.3C1807.1,50,1835,30,1864,25C1891.8,20,1920,30,1948,33.3C1976.5,37,2005,33,2019,31.7L2032.9,30L2032.9,100L2018.8,100C2004.7,100,1976,100,1948,100C1920,100,1892,100,1864,100C1835.3,100,1807,100,1779,100C1750.6,100,1722,100,1694,100C1665.9,100,1638,100,1609,100C1581.2,100,1553,100,1525,100C1496.5,100,1468,100,1440,100C1411.8,100,1384,100,1355,100C1327.1,100,1299,100,1271,100C1242.4,100,1214,100,1186,100C1157.6,100,1129,100,1101,100C1072.9,100,1045,100,1016,100C988.2,100,960,100,932,100C903.5,100,875,100,847,100C818.8,100,791,100,762,100C734.1,100,706,100,678,100C649.4,100,621,100,593,100C564.7,100,536,100,508,100C480,100,452,100,424,100C395.3,100,367,100,339,100C310.6,100,282,100,254,100C225.9,100,198,100,169,100C141.2,100,113,100,85,100C56.5,100,28,100,14,100L0,100Z"></path> -->
+							<!-- <path id="curve" fill="yellow" d="M0,60L14.1,53.3C28.2,47,56,33,85,30C112.9,27,141,33,169,41.7C197.6,50,226,60,254,58.3C282.4,57,311,43,339,41.7C367.1,40,395,50,424,51.7C451.8,53,480,47,508,41.7C536.5,37,565,33,593,38.3C621.2,43,649,57,678,60C705.9,63,734,57,762,45C790.6,33,819,17,847,8.3C875.3,0,904,0,932,3.3C960,7,988,13,1016,28.3C1044.7,43,1073,67,1101,68.3C1129.4,70,1158,50,1186,45C1214.1,40,1242,50,1271,50C1298.8,50,1327,40,1355,36.7C1383.5,33,1412,37,1440,41.7C1468.2,47,1496,53,1525,60C1552.9,67,1581,73,1609,63.3C1637.6,53,1666,27,1694,25C1722.4,23,1751,47,1779,48.3C1807.1,50,1835,30,1864,25C1891.8,20,1920,30,1948,33.3C1976.5,37,2005,33,2019,31.7L2032.9,30L2032.9,100L2018.8,100C2004.7,100,1976,100,1948,100C1920,100,1892,100,1864,100C1835.3,100,1807,100,1779,100C1750.6,100,1722,100,1694,100C1665.9,100,1638,100,1609,100C1581.2,100,1553,100,1525,100C1496.5,100,1468,100,1440,100C1411.8,100,1384,100,1355,100C1327.1,100,1299,100,1271,100C1242.4,100,1214,100,1186,100C1157.6,100,1129,100,1101,100C1072.9,100,1045,100,1016,100C988.2,100,960,100,932,100C903.5,100,875,100,847,100C818.8,100,791,100,762,100C734.1,100,706,100,678,100C649.4,100,621,100,593,100C564.7,100,536,100,508,100C480,100,452,100,424,100C395.3,100,367,100,339,100C310.6,100,282,100,254,100C225.9,100,198,100,169,100C141.2,100,113,100,85,100C56.5,100,28,100,14,100L0,100Z"></path> -->
+							<path id="curve" d="M 200 107 C 22 66 25 48 92 26 Q 153 1 185 23 Q 206 36 290 2 L 304 44" fill="transparent"></path>
+							<text>
+								<textPath xlink:href="#curve" id="lotus-logo" startOffset="65%" text-anchor="middle">
+									<tspan id="lotus-word1">Parsed</tspan>
+									<tspan id="lotus-word2">Lines</tspan>
+									<tspan id="lotus--">.</tspan>
+									<tspan id="lotus--a">a</tspan>
+									<tspan id="lotus--i">i</tspan>
+								</textPath>
+							</text>
+						</svg>
+					</section>
+
+					<section id="content">
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "DeepMind Says It Had Nothing to Do With Research Paper Saying AI Could End Humanity"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that sells AI-proof vests.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/VestABly19220235.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Vest-A-Bly
+            </div>
+            <div id="tagline">
+              Be safe from AI with Vest-A-Bly! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will sell vests that are said to protect the wearer from AI. The vests will be made of a special material that is impenetrable to AI. The company will make money by selling the vests to people who are afraid of AI.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that makes AI-proof houses.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/HomesfortheEndTimes19220245.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Homes for the End Times.
+            </div>
+            <div id="tagline">
+              A company that makes AI-proof houses. We keep you safe from the machines. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will make homes that are AI-proof, meaning that they will be safe from any AI attacks. The homes will be made out of materials that are impenetrable to AI, and they will be equipped with state-of-the-art security systems. The company will charge a premium for these homes, as they will be the only ones of their kind on the market.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that sells AI-proof insurance.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/InsuranceagainstAI19220255.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Insurance against AI.
+            </div>
+            <div id="tagline">
+              Keep your head above water in the age of AI. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company would sell insurance policies that would pay out in the event that an AI caused widespread harm to humanity. The company would make money by charging premiums for these policies.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Interest rate outlook: Hike will affect car loans, credit cards, mortgages, jobs"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that offers low-interest loans specifically for buying cars.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/CarLoansRUs19234447.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Car-Loans-R-Us
+            </div>
+            <div id="tagline">
+              Get the car you want without breaking the bank. Car-Loans-R-Us has you covered. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will offer low-interest loans specifically for buying cars. Customers will be able to apply for loans online and will be given a decision within 24 hours. The company will make money by charging interest on the loans.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A credit card company that offers a 0% APR for balance transfers.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/APRed19234457.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              0% APR-ed
+            </div>
+            <div id="tagline">
+              Get a 0% APR on balance transfers and save on interest! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will offer a 0% APR for balance transfers, which will help customers save on interest. The company will make money by charging a small fee for each balance transfer.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A mortgage company that offers fixed-rate mortgages with terms of 10 years or less.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/MortgageLifter19234507.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Mortgage Lifter
+            </div>
+            <div id="tagline">
+              We make your mortgage lighter. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will offer fixed-rate mortgages with terms of 10 years or less. Borrowers will be able to choose from a variety of repayment options, including interest-only, principal and interest, and bi-weekly payments. The company will make money by charging interest on the loans.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "I 'quiet quit' my job and now make thousands on my side hustles"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A pet sitting business that specializes in reptiles.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/SlytherPets19234142.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              SlytherPets
+            </div>
+            <div id="tagline">
+              "We're not afraid to get our hands dirty!" <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  1. I would charge an hourly rate for pet sitting, with a minimum of 4 hours per visit. 2. I would also offer a package deal for those who book 5 or more visits in a month. 3. I would advertise my business through word-of-mouth, online directories, and flyers in pet stores.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A mobile car detailing service that comes to you.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/DetailMe19234152.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Detail Me!
+            </div>
+            <div id="tagline">
+              Detail Me! is the mobile car detailing service that comes to you! We provide a convenient, professional car detailing service that will have your car looking its best. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  Detail Me! will be a mobile car detailing service that will come to the customer's location. The business will be monetized through a subscription model, where customers can pay a monthly fee for the service. The business will also offer a la carte services for those who do not want to subscribe.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A home organization and decluttering service.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/KonMariMethod19234202.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              KonMari Method
+            </div>
+            <div id="tagline">
+              We can help you declutter and organize your home so you can live your best life! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will provide in-home organization and decluttering services. Clients will be charged an hourly rate for the service. The business will also sell organization products to clients.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Queen's funeral: Important details you missed + photos"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A funeral home that offers a "celebration of life" package that includes a party planner and catering services.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/LifeoftheParty19234112.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Life of the Party"
+            </div>
+            <div id="tagline">
+              Celebrate your life, even after you're gone. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  1. The funeral home will offer a "celebration of life" package that includes a party planner and catering services.2. The package will be offered at a discount to customers who pre-pay for their funeral services.3. The funeral home will make money by upselling customers on the package and by charging a fee for the party planning and catering services.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A funeral home that offers a "green" burial option that uses environmentally-friendly products and processes.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/EcoFuneral19234122.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Eco-Funeral
+            </div>
+            <div id="tagline">
+              Eco-friendly funerals for a greener tomorrow. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The funeral home would offer a "green" burial option that would use environmentally-friendly products and processes. Families could choose this option for an additional fee. The funeral home could also partner with local environmental organizations to offer educational workshops on green burial options and practices.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A funeral home that offers a "custom" burial option that allows customers to choose from a variety of unique and personalized funeral options.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/CasketCustomization19234132.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Casket Customization"
+            </div>
+            <div id="tagline">
+              "We make sure your final send-off is exactly how you want it." <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The funeral home would offer a variety of unique and personalized funeral options for an additional fee. The funeral home would also offer a "custom" burial option that would allow customers to choose from a variety of unique and personalized funeral options. The funeral home would make money by charging customers an additional fee for the "custom" burial option.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Raymond Dearie's FISA Court experience appeals to Trump: report"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides a service to help people remember their dreams.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/Dreamcatcher19234011.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Dreamcatcher
+            </div>
+            <div id="tagline">
+              We help you remember your dreams so you can achieve your goals. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  1. The business will offer a subscription-based service that will send reminders to customers to journal their dreams. 2. Customers will be able to access their dream journal through a web-based platform or mobile app. 3. The business will generate revenue through monthly subscriptions and advertisements.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides a service to help people manage their time more effectively.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/TimeManagementSolutions19234021.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Time Management Solutions!
+            </div>
+            <div id="tagline">
+              Make the most of your time with our time management solutions! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will offer a subscription-based service that provides access to a range of time management tools and resources. The business will also offer a la carte services for those who need help with specific time management challenges. The business will generate revenue through subscription fees and commissions on products and services sold through the platform.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides a service to help people stay healthy and fit.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/Fitness19234031.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Fitness
+            </div>
+            <div id="tagline">
+              We help you stay healthy and fit! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will provide a service that helps people stay healthy and fit. The service will be subscription-based, and the business will make money by charging people for the service.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Tesla Model Y: Biggest flaws of the $66,000 electric SUV"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A Tesla Model Y rental service that lets people try out the car before they buy it.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/YnotTesla19234042.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Y-not Tesla?
+            </div>
+            <div id="tagline">
+              Y-not Tesla? Try the car before you buy it! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will rent out Tesla Model Y cars to people who want to try them out before they buy them. The cars will be rented by the day, and the business will make money through charging for the rental service.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A Tesla Model Y concierge service that delivers the car to your door and handles all the paperwork.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/ModelYNot19234052.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Model Y-Not?
+            </div>
+            <div id="tagline">
+              The hassle-free way to get your Tesla Model Y. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The Tesla Model Y-Not? concierge service will deliver the car to your door and handle all the paperwork for a fee. The service will be available in major cities across the United States. The concierge service will make money by charging a percentage of the total cost of the car.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A Tesla Model Y subscription service that includes all maintenance and charging.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/TeslalyYours19234102.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Tesla-ly Yours
+            </div>
+            <div id="tagline">
+              The Tesla Model Y subscription service that includes all maintenance and charging. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The Tesla-ly Yours subscription service will include all maintenance and charging for a monthly fee. The service will be available in all major markets where the Tesla Model Y is sold. The service will be marketed to Tesla Model Y owners as a way to simplify ownership and reduce costs.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "The odds of the Fed sticking a soft landing are falling: Charles Schwab"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that sells Fed-themed party supplies, like "soft landing" paper plates and napkins.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/LandingParty19234243.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Landing Party"
+            </div>
+            <div id="tagline">
+              "For all your Fed-themed party needs!" <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  1. The business will sell Fed-themed party supplies online and in party stores.2. The party supplies will include items like "soft landing" paper plates and napkins.3. The business will make money by selling the party supplies at a markup.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides Fed-themed entertainment, like a band that plays soft landing-themed songs.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/SoftLandingEntertainment19234253.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Soft Landing Entertainment."
+            </div>
+            <div id="tagline">
+              "We provide the perfect soundtrack for a soft landing." <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  This business would provide entertainment for those who are interested in the Federal Reserve and its policies. This could include a band that plays soft landing-themed songs, or other forms of entertainment. The business could be monetized through ticket sales, merchandise, or sponsorships.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that sells Fed-themed clothing, like "soft landing" t-shirts and hats.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/SoftLanding19234303.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Soft Landing"
+            </div>
+            <div id="tagline">
+              Looking for a way to show your support for the Fed? Look no further than "Soft Landing"! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will sell Fed-themed clothing and other merchandise online and in a brick-and-mortar store. Prices will be set at a premium to cover the cost of production and shipping. The business will be profitable if it can reach a wide enough audience.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Trump, Biden, Bernie playing a 3-way game of geriatric chicken in 2024"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A home health care service for the elderly that specializes in providing care for those with dementia or Alzheimer's.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/AlzheimersAngels19234314.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Alzheimer's Angels
+            </div>
+            <div id="tagline">
+              The care you need, when you need it most. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will offer in-home health care services for the elderly, with a focus on those suffering from dementia or Alzheimer's. The business will charge an hourly rate for its services. The business will be monetized through a mix of private pay and government reimbursement.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A retirement community that offers a variety of activities and amenities specifically designed for seniors.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/TheGoldenYearsRetirementCommunity19234325.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "The Golden Years Retirement Community!"
+            </div>
+            <div id="tagline">
+              "The best years of your life begin at The Golden Years Retirement Community!" <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The Golden Years Retirement Community will be a full-service retirement community offering a variety of activities and amenities specifically designed for seniors. Residents will be able to choose from a variety of living arrangements, including apartments, condominiums, and single-family homes. The community will also offer a variety of social and recreational activities, as well as access to healthcare and other services.The community will be funded through a variety of sources, including private investment, government grants, and user fees. Residents will be charged a monthly fee that will cover the cost of their housing, as well as the cost of social and recreational activities.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A travel company that specializes in organizing trips and activities for seniors.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/SageTravel19234335.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "Sage" Travel
+            </div>
+            <div id="tagline">
+              "The best way to see the world is with Sage Travel." <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will work with travel agents and tour operators to create custom itineraries for seniors. It will also partner with companies that offer seniors discounts on travel and activities. The company will make money by charging a commission on bookings.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Trump raged about DeSantis stealing his limelight with immigrant stunt: report"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that sells Trump-themed party supplies, including "Make America Great Again" hats and banners.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/ThePartysOver19234416.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "The Party's Over"
+            </div>
+            <div id="tagline">
+              Make your party great again with our Trump-themed party supplies! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company would sell party supplies online and through a catalog. Prices would be set at a premium, with a portion of the proceeds going to support Trump's re-election campaign. The company would also sell advertising space on its website to businesses that support Trump.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that sells DeSantis-themed party supplies, including "Make America Great Again" hats and banners.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/DeSantisthemed19234426.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "DeSantis-themed"
+            </div>
+            <div id="tagline">
+              Make your next party a DeSantis-themed extravaganza! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company would sell DeSantis-themed party supplies online and in party stores. The company would make money through sales of the supplies.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that sells both Trump- and DeSantis-themed party supplies, to help people celebrate both men's accomplishments.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/DeSantisTrumpCelebrations19234436.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              "DeSantis & Trump Celebrations!"
+            </div>
+            <div id="tagline">
+              "The ultimate party supplies for Trump and DeSantis fans!" <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company would sell party supplies online and in physical stores. Themed items would include plates, napkins, decorations, and games. The company would make money through sales of these items.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Value of Prince William's property empire rose $350 million in a decade"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that specializes in helping people invest their money in order to increase their property value.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/ValueInvesting19234345.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Value Investing!
+            </div>
+            <div id="tagline">
+              Value Investing: Invest in your future today! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will offer services to help people invest their money in order to increase their property value. The company will make money by charging a percentage of the increase in value of the property. The company will also offer consulting services to help people maximize their return on investment.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that helps people manage their property portfolios in order to maximize their return on investment.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/PortfolioPropertyManagement19234356.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Portfolio Property Management
+            </div>
+            <div id="tagline">
+              We help you get the most out of your property portfolio. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will offer its services to individuals and businesses with property portfolios. It will charge a percentage of the value of the portfolio as its fee. The company will use its expertise to help clients make the most of their property investments and maximize their return on investment.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A company that provides concierge services for people who own multiple properties.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/ConciergeMultiPropertyServices19234406.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Concierge Multi-Property Services.
+            </div>
+            <div id="tagline">
+              We make property ownership a breeze. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The company will provide a variety of services to property owners, including managing repairs and maintenance, dealing with tenants, and handling paperwork. The company will charge a monthly fee for its services.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+							<section id="news">
+								<div class="headline">
+    <hr>
+    "Videos show Hurricane Fiona battering a powerless Puerto Rico"
+    <hr>
+</div>
+							</section>
+							<section id="modules">
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides generators and other forms of backup power for people in hurricane-prone areas.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/BackupPower19234212.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Backup Power
+            </div>
+            <div id="tagline">
+              When the power goes out, we keep the lights on. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will sell generators and other forms of backup power to people in hurricane-prone areas. The business will make money by selling these products to customers at a markup. The business will also provide maintenance and repair services for generators and other backup power systems.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides hurricane-proofing services for homes and businesses.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/HurricaneProofing19234223.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Hurricane-Proofing
+            </div>
+            <div id="tagline">
+              We'll make sure your home or business can weather any storm. <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business would provide hurricane-proofing services, which could include things like installing hurricane shutters, reinforcing doors and windows, and so on. The business could be monetized by charging customers a fee for the services provided.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+									<div class="amodule"><style>
+
+  </style>
+  
+  <div id="business3" style="display:flex;", >
+    <div id="box">
+        <div id="intro">
+            <div id="desc">
+               A business that provides emergency supplies and services for people in hurricane-affected areas.
+            </div>
+        </div>
+        <div id="image">
+            <img src="../static/modules/HurricaneHelpers19234233.jpg" alt="Italian Trulli" id="leftpic">
+        </div>
+        <div id="title">
+            <div id="name">
+              Hurricane Helpers
+            </div>
+            <div id="tagline">
+              We're here to help when hurricanes strike! <br/>
+            </div>
+            <div id="article">
+                <div id="plan">
+                  The business will provide emergency supplies and services to people in hurricane-affected areas. It will charge a fee for these services. The business will also accept donations to help support its operations.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div></div>
+								
+							</section>
+						
+					</section>
+					  <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L14.1,53.3C28.2,47,56,33,85,30C112.9,27,141,33,169,41.7C197.6,50,226,60,254,58.3C282.4,57,311,43,339,41.7C367.1,40,395,50,424,51.7C451.8,53,480,47,508,41.7C536.5,37,565,33,593,38.3C621.2,43,649,57,678,60C705.9,63,734,57,762,45C790.6,33,819,17,847,8.3C875.3,0,904,0,932,3.3C960,7,988,13,1016,28.3C1044.7,43,1073,67,1101,68.3C1129.4,70,1158,50,1186,45C1214.1,40,1242,50,1271,50C1298.8,50,1327,40,1355,36.7C1383.5,33,1412,37,1440,41.7C1468.2,47,1496,53,1525,60C1552.9,67,1581,73,1609,63.3C1637.6,53,1666,27,1694,25C1722.4,23,1751,47,1779,48.3C1807.1,50,1835,30,1864,25C1891.8,20,1920,30,1948,33.3C1976.5,37,2005,33,2019,31.7L2032.9,30L2032.9,100L2018.8,100C2004.7,100,1976,100,1948,100C1920,100,1892,100,1864,100C1835.3,100,1807,100,1779,100C1750.6,100,1722,100,1694,100C1665.9,100,1638,100,1609,100C1581.2,100,1553,100,1525,100C1496.5,100,1468,100,1440,100C1411.8,100,1384,100,1355,100C1327.1,100,1299,100,1271,100C1242.4,100,1214,100,1186,100C1157.6,100,1129,100,1101,100C1072.9,100,1045,100,1016,100C988.2,100,960,100,932,100C903.5,100,875,100,847,100C818.8,100,791,100,762,100C734.1,100,706,100,678,100C649.4,100,621,100,593,100C564.7,100,536,100,508,100C480,100,452,100,424,100C395.3,100,367,100,339,100C310.6,100,282,100,254,100C225.9,100,198,100,169,100C141.2,100,113,100,85,100C56.5,100,28,100,14,100L0,100Z"></path>
+						<defs>
+							<linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+							<stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+							<stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+						</linearGradient></defs></svg> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
